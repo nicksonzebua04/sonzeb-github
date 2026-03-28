@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickson N.F Zebua | Cybersecurity Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        /* Gaya Visual saat Menekan (Tactile Feedback) */
+        .btn-press:active {
+            transform: scale(0.95);
+        }
+        .card-press:active {
+            transform: scale(0.98);
+        }
+        
+        /* Navigasi Glassmorphism */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+    <!-- Navigasi (Link sudah terhubung ke bagian halaman) -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#home" class="text-xl font-extrabold tracking-tighter text-slate-950 uppercase">
+                Nickson<span class="text-blue-600">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-slate-500">
+                <a href="#about" class="hover:text-slate-950 transition">Tentang</a>
+                <a href="#experience" class="hover:text-slate-950 transition">Pengalaman</a>
+                <a href="#skills" class="hover:text-slate-950 transition">Keahlian</a>
+                <a href="#contact" class="hover:text-blue-600 transition font-extrabold">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-slate-950 text-white pt-16 px-6 relative overflow-hidden">
+        <!-- Dekorasi Background -->
+        <div class="absolute w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] -top-20 -left-20 pointer-events-none"></div>
+        <div class="absolute w-[300px] h-[300px] bg-indigo-600/10 rounded-full blur-[100px] -bottom-20 -right-20 pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest">
+                <i class="fa-solid fa-shield-halved mr-2"></i> Cybersecurity Enthusiast
+            </div>
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-8 tracking-tighter">
+                NICKSON
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-12 font-light max-w-2xl mx-auto leading-relaxed px-4">
+                Satu Langkah Lebih Maju dalam <span class="text-white font-semibold border-b-2 border-blue-500 px-1">Keamanan Digital</span>.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5 px-10">
+                <a href="#about" class="btn-press bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-blue-600/20 text-center">
+                    Mulai Eksplorasi
+                </a>
+                <a href="#contact" class="btn-press border border-white/20 hover:bg-white/10 text-white px-10 py-4 rounded-2xl font-bold transition-all backdrop-blur-sm text-center">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section (Statis, Diam, & Mobile Friendly) -->
+    <section id="about" class="py-24 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Judul -->
+                <div class="lg:col-span-4">
+                    <h2 class="text-3xl font-extrabold text-slate-950 uppercase tracking-tighter border-l-8 border-blue-600 pl-6 mb-6">Tentang<br>Saya</h2>
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 shadow-sm">
+                        <p class="text-xs font-black text-blue-600 uppercase tracking-widest mb-2 text-center">Instansi Pendidikan</p>
+                        <p class="text-slate-900 font-bold leading-tight uppercase text-center">Atma Jaya Yogyakarta</p>
+                        <p class="text-slate-500 text-[13px] mt-1 font-medium italic text-center">Fakultas Teknologi Industri<br>Prodi Informatika</p>
+                    </div>
+                </div>
+                <!-- Konten Teks -->
+                <div class="lg:col-span-8">
+                    <div class="text-[16px] md:text-[19px] text-slate-600 leading-relaxed font-light space-y-8">
+                        <p>
+                            Halo, Perkenalkan nama saya <span class="text-slate-950 font-bold underline decoration-blue-500 decoration-4 underline-offset-4">Nickson N.F Zebua</span>, mahasiswa semester 2 <span class="text-slate-950 font-semibold italic">Universitas Atma Jaya Yogyakarta</span> saya dari Fakultas Teknologi Industri prodi Informatika.
+                        </p>
+                        <p>
+                            Minat saya berada di bidang <span class="text-blue-700 font-bold">Cybersecurity</span>. Ketertarikan saya pada Cybersecurity bermula dari keinginan untuk memahami cara kerja sistem dan melindunginya dari kerentanan. 
+                        </p>
+                        <div class="bg-slate-950 p-8 rounded-[2rem] text-slate-300 italic border-l-8 border-blue-600 shadow-2xl">
+                            "Saat ini saya sedang fokus mengembangkan pemahaman mendalam tentang keamanan jaringan, etika peretasan (ethical hacking), dan perlindungan data. Saya sedang menikmati proses belajar mandiri melalui berbagai platform praktikum dan mulai membangun fondasi di bidang Pentester of Cybersecurity dan Security Analyst."
+                        </div>
+                        <p>
+                            Saya adalah pembelajar cepat yang aktif mengeksplorasi tools keamanan terbaru dan metodologi pertahanan siber untuk mempersiapkan diri menghadapi tantangan keamanan digital di masa depan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-slate-950 mb-16 uppercase tracking-tighter">Pengalaman Utama</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Card 1 -->
+                <div class="card-press bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 group text-left">
+                    <div class="w-16 h-16 bg-slate-950 text-white flex items-center justify-center rounded-2xl mb-8 group-hover:bg-blue-600 transition-colors duration-500">
+                        <i class="fa-solid fa-user-secret text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-950 uppercase tracking-tighter">Junior Pentester</h3>
+                    <p class="text-blue-600 text-xs font-black uppercase tracking-widest mb-4">Cybersecurity</p>
+                    <p class="text-slate-600 text-sm leading-relaxed font-medium italic">Fokus pada eksplorasi kerentanan sistem dan metodologi pertahanan siber masa depan.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-press bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 group text-left">
+                    <div class="w-16 h-16 bg-slate-950 text-white flex items-center justify-center rounded-2xl mb-8 group-hover:bg-indigo-600 transition-colors duration-500">
+                        <i class="fa-solid fa-microchip text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-950 uppercase tracking-tighter">Junior of AI Engineer</h3>
+                    <p class="text-blue-600 text-xs font-black uppercase tracking-widest mb-4">Artificial Intelligence</p>
+                    <p class="text-slate-600 text-sm leading-relaxed font-medium italic">Mengeksplorasi integrasi kecerdasan buatan dalam optimasi sistem digital masa kini.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 bg-white overflow-hidden">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-slate-950 text-white rounded-[3rem] p-10 md:p-16 relative shadow-2xl">
+                <div class="relative z-10">
+                    <div class="flex items-center gap-4 mb-8 text-center justify-center">
+                        <h2 class="text-blue-400 font-bold text-sm tracking-[0.3em] uppercase">Spesialisasi Teknis</h2>
+                    </div>
+                    <h3 class="text-3xl md:text-5xl font-extrabold mb-10 leading-tight tracking-tighter italic text-center">
+                        Penetration Tester<span class="text-blue-500">.</span>
+                    </h3>
+                    <p class="text-slate-400 text-[16px] md:text-xl leading-relaxed mb-12 font-light text-center">
+                        Saya mempunyai skill sebagai Penetration Tester di bidang Cybersecurity di mana saya bertugas mensimulasikan serangan siber secara legal dan etis (<span class="text-white font-bold italic underline decoration-blue-500">Ethical Hacking</span>) pada sistem, jaringan, atau aplikasi.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-4 bg-white/5 p-6 rounded-3xl border border-white/10">
+                            <i class="fa-solid fa-bug-slash text-blue-500 mt-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-white mb-1 uppercase text-xs tracking-widest">Identifikasi Celah</h4>
+                                <p class="text-slate-400 text-[13px] italic">Menemukan kerentanan sebelum peretas jahat melakukannya.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-white/5 p-6 rounded-3xl border border-white/10">
+                            <i class="fa-solid fa-shield-virus text-green-500 mt-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-white mb-1 uppercase text-xs tracking-widest">Rekomendasi</h4>
+                                <p class="text-slate-400 text-[13px] italic">Memberikan perbaikan teknis untuk memperkuat keamanan sistem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dekorasi Ikon Code di Background -->
+                <i class="fa-solid fa-code absolute -right-10 -bottom-10 text-[15rem] text-blue-600/5 pointer-events-none"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Link Instagram Aktif) -->
+    <section id="contact" class="py-24 px-6 bg-slate-50 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-extrabold text-slate-950 mb-8 tracking-tighter uppercase italic">Mari Terhubung</h2>
+            <p class="text-slate-500 mb-12 uppercase tracking-[0.2em] text-xs font-bold underline decoration-blue-500 underline-offset-8 decoration-2 italic">Informatika | Fakultas Teknologi Industri | UAJY</p>
+            
+            <!-- TOMBOL INSTAGRAM LANGSUNG TERHUBUNG -->
+            <a href="https://www.instagram.com/nickson_zebz/" target="_blank" class="btn-press inline-flex items-center gap-6 bg-white px-10 py-5 rounded-[2.5rem] shadow-sm border border-slate-200 hover:shadow-xl hover:border-blue-300 transition-all duration-500 group">
+                <div class="w-14 h-14 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 text-white flex items-center justify-center rounded-2xl text-2xl group-hover:rotate-12 transition-transform duration-500">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="text-left">
+                    <p class="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">Instagram Profil</p>
+                    <p class="text-xl font-extrabold text-slate-950 tracking-tight">@nickson_zebz</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-100 bg-white text-center">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em] leading-loose">
+                &copy; 2026 Nickson N.F Zebua. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
